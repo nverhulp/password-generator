@@ -9,13 +9,9 @@ function generatePassword() {
   var numberSet = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var specialcharSet = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "?", "/", "-", ";", ":", "[", "]", "{", "}", ",", ".", "<", ">", "=", "_", "`", "~", "|"];
 
-  var allChar = [];
-
-  var wantsLowercase;
-  var wantsUppercase;
-  var wantsNumbers;
-  var wantsSpecial;
-  var finalPassword;
+  // Created empty arrays
+  var resultArray = [];
+  var userArray = [];
 
 
  // Ask how many characters for password
