@@ -9,6 +9,14 @@ function generatePassword() {
   var numberSet = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var specialcharSet = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "?", "/", "-", ";", ":", "[", "]", "{", "}", ",", ".", "<", ">", "=", "_", "`", "~", "|"];
 
+  var allChar = [];
+
+  var wantsLowercase;
+  var wantsUppercase;
+  var wantsNumbers;
+  var wantsSpecial;
+
+
  // Ask how many characters for password
  function charLength () {
   passwordLength = prompt("How many characters would you like your password? Choose a value between 8 and 128.");
@@ -19,10 +27,25 @@ function generatePassword() {
  }
 }
 charLength()
+
+// User must select at least one of the following password options
+function passwordOptions() {
+  wantsLowercase = confirm ("Do you want to include lowercase characters?");
+  wantsUppercase = confirm ("Do you want to include UPPERCASE characters?");
+  wantsNumbers = confirm ("Do you want to include numbers?");
+  wantsSpecial = confirm ("Do you want to include special characters?");
+// If user does not select at least one option, error message will appear
+  if (wantsLowercase == false && wantsUppercase == false && wantsNumbers == false && wantsSpecial == false) {
+    alert("Error! Please select at least one option.");
+    passwordOptions();
+  }
 }
+passwordOptions()
+}
+generatePassword()
 
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");x
 
 // Write password to the #password input
 function writePassword() {
