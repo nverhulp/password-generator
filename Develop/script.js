@@ -15,6 +15,14 @@ function generatePassword() {
   var wantsUppercase;
   var wantsNumbers;
   var wantsSpecial;
+  var finalPassword;
+
+  // Set initial values
+  charAmount = 0
+  wantsLowercase = false
+  wantsUppercase = false
+  wantsNumbers = false
+  wantsSpecial = false
 
 
  // Ask how many characters for password
@@ -43,7 +51,7 @@ function passwordOptions() {
 passwordOptions()
 
 // Chooses character types from arrays
-if (wantsLowercase === true) {
+if (wantsLowercase) {
   allChar = allChar.concat(lowercaseSet);
 }
 if (wantsUppercase === true) {
@@ -56,7 +64,11 @@ if (wantsSpecial === true) {
   allChar = allChar.concat(specialcharSet);
 }
 
-
+// This is what generates a password
+for (let i = 0; i < passwordLength; i++) {
+  finalPassword += allChar[Math.floor(Math.random() * (allChar.length))];
+}
+return finalPassword
 }
 generatePassword()
 
