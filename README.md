@@ -14,6 +14,8 @@ This week’s Challenge requires you to create an application that an employee c
 
 ## Deployed Page
 
+<img src="./assets/deployed-page.png">
+
 ## Acceptance Criteria
 
 GIVEN I need a new, secure password
