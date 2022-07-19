@@ -17,13 +17,6 @@ function generatePassword() {
   var wantsSpecial;
   var finalPassword;
 
-  // Set initial values
-  charAmount = 0
-  wantsLowercase = false
-  wantsUppercase = false
-  wantsNumbers = false
-  wantsSpecial = false
-
 
  // Ask how many characters for password
  function charLength () {
@@ -51,22 +44,24 @@ function passwordOptions() {
 passwordOptions()
 
 // Chooses character types from arrays
+let passwordChars = ''
 if (wantsLowercase) {
-  allChar = allChar.concat(lowercaseSet);
+  passwordChars += lowercaseSet;
 }
-if (wantsUppercase === true) {
-  allChar = allChar.concat(uppercaseSet);
+if (wantsUppercase) {
+  passwordChars += uppercaseSet;
 }
-if (wantsNumbers === true) {
-  allChar = allChar.concat(numberSet);
+if (wantsNumbers) {
+  passwordChars += numberSet;
 }
-if (wantsSpecial === true) {
-  allChar = allChar.concat(specialcharSet);
+if (wantsSpecial) {
+  passwordChars += specialcharSet;
 }
 
+let finalPassword = ''
 // This is what generates a password
-for (let i = 0; i < passwordLength; i++) {
-  finalPassword += allChar[Math.floor(Math.random() * (allChar.length))];
+for (let i = 0; i < charAmount; i++) {
+  let char = Math.floor(Math.random() * passwordChars.length)
 }
 return finalPassword
 }
