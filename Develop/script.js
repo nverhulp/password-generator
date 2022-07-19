@@ -41,6 +41,22 @@ function passwordOptions() {
   }
 }
 passwordOptions()
+
+// Chooses character types from arrays
+if (wantsLowercase === true) {
+  allChar = allChar.concat(lowercaseSet);
+}
+if (wantsUppercase === true) {
+  allChar = allChar.concat(uppercaseSet);
+}
+if (wantsNumbers === true) {
+  allChar = allChar.concat(numberSet);
+}
+if (wantsSpecial === true) {
+  allChar = allChar.concat(specialcharSet);
+}
+
+
 }
 generatePassword()
 
