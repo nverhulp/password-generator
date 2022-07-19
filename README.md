@@ -46,6 +46,8 @@ THEN the password is either displayed in an alert or written to the page
 
 ## URL of Deployed Application
 
+[Deployed Gitpage](https://nverhulp.github.io/password-generator/)
+
 ## Credits
 
 1. Article about concat function by [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
