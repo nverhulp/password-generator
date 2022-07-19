@@ -1,5 +1,17 @@
 // Assignment code here
 
+// Get references to the #generate element
+var generateBtn = document.querySelector('#generate')
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
 // Function to generate password
 function generatePassword() {
 
@@ -54,26 +66,14 @@ if (wantsSpecial) {
 }
 console.log(resultArray)
 
-let finalPassword = ''
 // This is what generates a password
-for (let i = 0; i < charAmount; i++) {
-  let char = Math.floor(Math.random() * passwordChars.length)
+for (var i = 0; i < passwordLength; i++) {
+  userArray.push (resultArray[Math.floor(Math.random() * resultArray.length)]); 
 }
-return finalPassword
+return userArray.join("");
 }
 generatePassword()
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");x
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
