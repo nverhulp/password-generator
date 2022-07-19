@@ -6,11 +6,11 @@ This week’s Challenge requires you to create an application that an employee c
 
 ## Table of Contents
 
-- [Deployed Page] (#deployedpage)
-- [Acceptance Criteria] (#acceptancecriteria)
-- [Comments] (#comments)
-- [URL of Deployed Application] (#url)
-- [Credits] (#credits)
+1. [Deployed Page] (#deployed-page)
+2. [Acceptance Criteria] (#acceptance-criteria)
+3. [Comments] (#comments)
+4. [URL of Deployed Application] (#url)
+5. [Credits] (#credits)
 
 ## Deployed Page
 
