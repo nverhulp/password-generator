@@ -51,7 +51,7 @@ function passwordOptions() {
 }
 passwordOptions()
 
-// Chooses character types from arrays
+// Condition of the arrays
 if (wantsLowercase) {
   resultArray = resultArray.concat(lowercaseSet);
 }
