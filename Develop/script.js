@@ -40,19 +40,19 @@ function passwordOptions() {
 passwordOptions()
 
 // Chooses character types from arrays
-let passwordChars = ''
 if (wantsLowercase) {
-  passwordChars += lowercaseSet;
+  resultArray = resultArray.concat(lowercaseSet);
 }
 if (wantsUppercase) {
-  passwordChars += uppercaseSet;
+  resultArray = resultArray.concat(uppercaseSet);
 }
 if (wantsNumbers) {
-  passwordChars += numberSet;
+  resultArray = resultArray.concat(numberSet);
 }
 if (wantsSpecial) {
-  passwordChars += specialcharSet;
+  resultArray = resultArray.concat(specialcharSet);
 }
+console.log(resultArray)
 
 let finalPassword = ''
 // This is what generates a password
