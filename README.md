@@ -36,6 +36,14 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Comments
 
+1. Got references to the #generate element.
+2. Created a generate password function.
+3. Created empty arrays.
+4. Created function that let user choose password length between 8 and 128.
+5. Provided password options that required user to select at least one.
+6. Set conditions of the arrays depending on choices by user.
+7. Wrote code that generated a random password based on the user's choices. 
+
 ## URL of Deployed Application
 
 ## Credits
